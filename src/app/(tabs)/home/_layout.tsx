@@ -1,10 +1,12 @@
-import { View, Text } from 'react-native'
 import React from 'react'
 import { Stack } from 'expo-router'
 
 const MenuStack = () => {
   return (
-    <Stack />
+    <Stack>
+      {/* to hide the header <Stack.Screen options={{title: 'Home', headerShown: false}} /> */}
+      <Stack.Screen name="index" options={{title: 'Home'}} />
+    </Stack>
   )
 }
 
